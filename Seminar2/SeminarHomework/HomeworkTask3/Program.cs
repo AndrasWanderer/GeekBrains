@@ -6,10 +6,7 @@
 
 Console.Write("Введите число дня недели: ");
 int day = int.Parse(Console.ReadLine());
-Week(day);
 
-static void Week(int day)
-{
     if (day >= 1 && day <= 5)
     {
         Console.WriteLine("Это рабочий день");
@@ -19,7 +16,7 @@ static void Week(int day)
     {
         Console.WriteLine("Это выходной день");
     }
-}
+
 
 if(day>7)
 {
