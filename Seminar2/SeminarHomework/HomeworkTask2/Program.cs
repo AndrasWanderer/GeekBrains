@@ -3,14 +3,18 @@
 //78 -> третьей цифры нет
 //32679 -> 6
 
-Console.Write("Введите трехзначное число: ");
+Console.Write("Введите любое целое число: ");
 int number = int.Parse(Console.ReadLine());
+while (number >= 1000)
+{
+    number = number / 10;
+}
 
-int thirdDigit = (number % 10) % 10;
+int thirdDigit = number % 10;
 
 Console.WriteLine($"Третья цифра числа {number} равна {thirdDigit}");
 
 if(number < 100)
 {
-    Console.WriteLine("Ошибка!Число не трехзначное.");
+    Console.WriteLine("Ошибка!Число не имеет трех цифр.");
 }
