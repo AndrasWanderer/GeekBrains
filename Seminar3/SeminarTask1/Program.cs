@@ -36,7 +36,7 @@ Console.WriteLine("Введите координаты x: ");
 int x = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите координаты y: ");
-int x = int.Parse(Console.ReadLine());
+int y = int.Parse(Console.ReadLine());
 
 if (x == 0 || y == 0)
 {
