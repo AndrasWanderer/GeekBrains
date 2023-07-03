@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
+//[1,0,1,1,0,1,0,0]
+
+
+int[] N = new int[8];
+for (int i=0; i < N.Length; i++) 
+{
+    N[i] = new Random().Next(0, 2); // [0, 1]
+}
+Console.WriteLine("Случайный массив из 8 элементов из 0 и 1 равен");
+for (int i=0; i < N.Length; i++)
+{
+    Console.Write(N[i] + " ");
+}
