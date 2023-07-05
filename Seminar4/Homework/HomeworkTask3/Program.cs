@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+//1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+//6, 1, 33 -> [6, 1, 33]
+
+int[] N = new int[8];
+for (int i=0; i < N.Length; i++) 
+{
+    N[i] = new Random().Next(0, 99); 
+}
+Console.Write("Случайный массив из 8 элементов: ");
+for (int i=0; i < N.Length; i++)
+{
+    Console.Write(N[i] + " ");
+}
