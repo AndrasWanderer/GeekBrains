@@ -6,10 +6,9 @@
 double[] array = new double[5];
 double min = 100;
 double max = 0;
-Random random = new Random();
 for (int i= 0; i < array.Length; i++)
 {
-   array[i] = random.NextDouble() * 100;
+   array[i] = Math.Round(new Random().NextDouble() * 100, 2);
    if (array[i] > max)
    {
        max = array[i];
