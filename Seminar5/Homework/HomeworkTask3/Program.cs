@@ -9,15 +9,8 @@ double max = 0;
 for (int i= 0; i < array.Length; i++)
 {
    array[i] = Math.Round(new Random().NextDouble() * 100, 2);
-   if (array[i] > max)
-   {
-       max = array[i];
-   }
-
-   if (array[i] < min)
-   {
-      min = array[i];
-   }
+   max = Math.Max(max, array[i]);
+   min = Math.Min(min, array[i]);
    Console.Write(array[i] + ";");
 }
 Console.WriteLine(" -> " + (max - min));
