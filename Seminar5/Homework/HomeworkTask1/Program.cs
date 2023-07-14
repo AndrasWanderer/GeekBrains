@@ -3,16 +3,21 @@
 //[345, 897, 568, 234] -> 2
 
 
-int[] array = new int[10];
-int CountEven = 0;
-for (int i=0; i < array.Length; i++) 
+static int GetCountEven(int[] array)
 {
-    array[i] = new Random().Next(100, 1000);
-    if ( array[i] >= 100 && array[i] <= 1000 && array[i] % 2 == 0)
+    int CountEven = 0;
+    for (int i = 0; i < array.Length; i++)
     {
-    CountEven += 1;
+        array[i] = new Random().Next(100, 1000);
+        if (array[i] >= 100 && array[i] <= 1000 && array[i] % 2 == 0)
+        {
+            CountEven += 1;
+        }
+        Console.Write(array[i] + ";");
     }
-    Console.Write(array[i] + ";");
+    return CountEven;
 }
-
-Console.WriteLine(" -> " + CountEven);
+//---------------------------------------------
+int[] array = new int[10];
+int evenCount = GetCountEven(array);
+Console.WriteLine(" -> " + evenCount);
