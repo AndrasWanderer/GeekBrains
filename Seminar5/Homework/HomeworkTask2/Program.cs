@@ -9,7 +9,7 @@ static int GetSumOdd(int[] array)
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = new Random().Next(1, 100);
-        if (array[i] >= 1 && array[i] <= 100 && array[i] % 2 != 0)
+        if (array[i] % 2 != 0)
         {
             Sum += array[i];
         }

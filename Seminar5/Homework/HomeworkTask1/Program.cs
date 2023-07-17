@@ -9,7 +9,7 @@ static int GetCountEven(int[] array)
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = new Random().Next(100, 1000);
-        if (array[i] >= 100 && array[i] <= 1000 && array[i] % 2 == 0)
+        if (array[i] % 2 == 0)
         {
             CountEven += 1;
         }
