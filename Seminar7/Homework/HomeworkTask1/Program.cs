@@ -15,7 +15,7 @@ for(int i = 0; i < countRow; i++)
 {
     for(int j = 0; j < countColumn; j++)
     {
-        array[i,j] = new Random().NextDouble() * (10 - 1) + 1;
+        array[i,j] = new Random().NextDouble() * 10;
     }
 }
 
@@ -23,7 +23,7 @@ for(int i = 0; i < countRow; i++)
 {
     for(int j = 0; j < countColumn; j++)
     {
-        Console.Write(array[i,j] + " ");
+        Console.Write(array[i,j].ToString("N2")  + " ");
     }
     Console.WriteLine();
 }
