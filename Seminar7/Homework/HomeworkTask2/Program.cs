@@ -20,21 +20,6 @@ static int[,] GenerateRandomArray(int rows, int columns)
 
     return array;
 }
-
-static void ExamPos(int[,] array,int row ,int column)
-{
-if (row >= 0 && row < array.GetLength(0) && column >= 0 && column < array.GetLength(1))
-{
-    int element = array[row, column];
-    Console.WriteLine($"Значение элемента: {element}");
-}
-else
-{
-    Console.WriteLine("Такого элемента нет в массиве.");
-}
-
-}
-
 static void PrintArray(int[,] array)
 {
     int rows = array.GetLength(0);
@@ -48,6 +33,19 @@ static void PrintArray(int[,] array)
         }
         Console.WriteLine();
     }
+}
+static void ExamPos(int[,] array,int row ,int column)
+{
+if (row >= 0 && row < array.GetLength(0) && column >= 0 && column < array.GetLength(1))
+{
+    int element = array[row, column];
+    Console.WriteLine($"Значение элемента: {element}");
+}
+else
+{
+    Console.WriteLine("Такого элемента нет в массиве.");
+}
+
 }
 //--------------------------------------------------------------
 int[,] array = GenerateRandomArray(4, 4);
