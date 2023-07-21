@@ -18,7 +18,7 @@ static int[,] MultiplyMatrices(int[,] matrix1, int[,] matrix2)
 
     if (columns1 != rows2)
     {
-        Console.WriteLine("Умножение невозможно. Количество столбцов не равно количеству строк второй матрицы.");
+        Console.WriteLine("Умножение невозможно.");
         return null;
     }
 
@@ -59,8 +59,8 @@ static void PrintMatrix(int[,] matrix)
 
 //----------------------------------------
 
-int[,] matrix1 = { { 5, 7 }, { 6, 3 } };
-int[,] matrix2 = { { 9, 1 }, { 4, 2 } };
+int[,] matrix1 = { { 5, 8}, { 9, 2 } };
+int[,] matrix2 = { { 6, 1}, { 4, 7 } };
 int[,] result = MultiplyMatrices(matrix1, matrix2);
 
 Console.WriteLine("Результирующая матрица:");
